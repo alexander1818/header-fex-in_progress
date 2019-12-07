@@ -33,16 +33,16 @@
 	<header>
 		<div class="container-fluid">
 			
-			<div class="wrap-navbar col-12">
+			<div class="wrap-navbar ">
 				<div class="nav-logo__items">
-					<div class="wrap-navbar__btn ">
+					<!-- <div class="wrap-navbar__btn "> -->
 					
 						<button class="navbar-btn id" id="navbar-button">
 							<svg width="24" height="24" viewBox="0 0 24 24" class="svg svg_pos_abs" style="width: 24px; height: 24px;"><path d="M4.5 7h15a.5.5 0 1 1 0 1h-15a.5.5 0 0 1 0-1zm0 5h15a.5.5 0 1 1 0 1h-15a.5.5 0 1 1 0-1zm0 5h15a.5.5 0 1 1 0 1h-15a.5.5 0 1 1 0-1z"></path>
 							</svg>
 						</button>
 						
-					</div>
+					<!-- </div> -->
 
 					<div class="wrap-navlogo">
 						<a href="#" class="navlogo-link">
@@ -51,26 +51,32 @@
 					</div>
 				</div>
 
-				<a class="btn-premium"><i class="fas fa-gift"></i>Купить премиум</a>
+				<button class="btn-premium d-flex justify-content-between align-items-center"><i class="fas fa-gift"></i>
+					<span class="btn-premium__text">Купить премиум</span></button>
 
-			<div class="header-menu d-flex justify-content-between">
+			<div class="header-menu  d-flex justify-content-between align-items-center">
 
-					<div class="header-menu__language">
-						<a href="#" class="link-languge">ru<i class="fas fa-angle-down"></i></a>
-						<ul class="link-language__subMenu d-none col-12">
-							<li class="link-language__subMenu--item d-flex justify-content-start ">English</li>
-							<li class="link-language__subMenu--item d-flex justify-content-start ">Украина</li>
-							<li class="link-language__subMenu--item d-flex justify-content-start ">Русский</li>
+					<div class="header-menu__language "  >
+						<button class="header-menu__language--btn d-flex justify-content-between align-items-center" id="menuLanguage">
+							<a href="#" class="link-languge " >ru<i class="fas fa-angle-down pl-1"></i></a>
+						</button>
+					<!-- <div class=""> -->
+						<ul class="link-language__subMenu link-language__subMenu--active col-lg-12 " id="link-langugeActive">
+							<div class="link-language__subMenu--tooltip"></div>
+							<li class="link-language__subMenu--item d-flex justify-content-start align-items-center">English
+							</li>
+							<li class="link-language__subMenu--item d-flex justify-content-start align-items-center">Украина</li>
+							<li class="link-language__subMenu--item d-flex justify-content-start align-items-center">Русский</li>
 						</ul>
 					</div>
 
-				<button id="header-link">
-					<div class="header-menu__link" >
-						<a  class="header-menu__link--link">
-							<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg" style="width: 16px; height: 16px;"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="assets" transform="translate(-181.000000, -331.000000)" fill="currentColor"><g id="Group-11" transform="translate(181.000000, 331.000000)"><rect id="Rectangle-18" x="0" y="0" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="6" y="0" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="12" y="0" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="0" y="6" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="6" y="6" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="12" y="6" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="0" y="12" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="6" y="12" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="12" y="12" width="4" height="4" rx="0.5"></rect></g></g></g></svg>
-						</a>
-					</div>
-				</button>
+					<button class="header-menu__link--btn" id="header-link">
+						<div class="header-menu__link" >
+							<a  class="header-menu__link--link">
+								<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg" style="width: 16px; height: 16px;"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="assets" transform="translate(-181.000000, -331.000000)" fill="currentColor"><g id="Group-11" transform="translate(181.000000, 331.000000)"><rect id="Rectangle-18" x="0" y="0" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="6" y="0" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="12" y="0" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="0" y="6" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="6" y="6" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="12" y="6" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="0" y="12" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="6" y="12" width="4" height="4" rx="0.5"></rect><rect id="Rectangle-18" x="12" y="12" width="4" height="4" rx="0.5"></rect></g></g></g></svg>
+							</a>
+						</div>
+					</button>
 
 						<ul class="header-sublink header-sublink__active  flex-column justify-content-between col-12" id="headerSublink">
 							<li class="sublink-item-head d-flex justify-content-start align-items-center">
@@ -104,19 +110,92 @@
 								<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg col-3 d-flex justify-content-center "><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Artboard" transform="translate(-93.000000, -387.000000)"><g id="Group" transform="translate(93.000000, 387.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><path d="M5,3 C5.18741972,3 5.37106734,3.05266944 5.52999894,3.1520017 L18.6432027,11.3477541 C19.1115392,11.6404644 19.2539124,12.2574148 18.9612021,12.7257513 C18.8807214,12.8545204 18.7719718,12.96327 18.6432027,13.0437507 L5.52999894,21.239503 C5.06166241,21.5322134 4.44471203,21.3898402 4.1520017,20.9215037 C4.05266944,20.7625721 4,20.5789244 4,20.3915047 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M5.5,12.1957524 C5.22385763,12.1957524 5,12.41961 5,12.6957524 L5,12.6957524 L5,19.4442183 C5,19.7203607 5.22385763,19.9442183 5.5,19.9442183 C5.77614237,19.9442183 6,19.7203607 6,19.4442183 L6,19.4442183 L6,12.6957524 C6,12.41961 5.77614237,12.1957524 5.5,12.1957524 Z M7.5,7.19575236 C7.22385763,7.19575236 7,7.41960998 7,7.69575236 L7,7.69575236 L7,18.1790568 C7,18.4551991 7.22385763,18.6790568 7.5,18.6790568 C7.77614237,18.6790568 8,18.4551991 8,18.1790568 L8,18.1790568 L8,7.69575236 C8,7.41960998 7.77614237,7.19575236 7.5,7.19575236 Z M9.5,10.1957524 C9.22385763,10.1957524 9,10.41961 9,10.6957524 L9,10.6957524 L9,16.9473204 C9,17.2234628 9.22385763,17.4473204 9.5,17.4473204 C9.77614237,17.4473204 10,17.2234628 10,16.9473204 L10,16.9473204 L10,10.6957524 C10,10.41961 9.77614237,10.1957524 9.5,10.1957524 Z M11.5,9.19575236 C11.2238576,9.19575236 11,9.41960998 11,9.69575236 L11,9.69575236 L11,15.6957524 C11,15.9718947 11.2238576,16.1957524 11.5,16.1957524 C11.7761424,16.1957524 12,15.9718947 12,15.6957524 L12,15.6957524 L12,9.69575236 C12,9.41960998 11.7761424,9.19575236 11.5,9.19575236 Z M13.5,12.1957524 C13.2238576,12.1957524 13,12.41961 13,12.6957524 L13,12.6957524 L13,14.4496791 C13,14.7258215 13.2238576,14.9496791 13.5,14.9496791 C13.7761424,14.9496791 14,14.7258215 14,14.4496791 L14,14.4496791 L14,12.6957524 C14,12.41961 13.7761424,12.1957524 13.5,12.1957524 Z M15.5,10.7132314 C15.2238576,10.7132314 15,10.9370891 15,11.2132314 L15,11.2132314 L15,13.2101515 C15,13.4862939 15.2238576,13.7101515 15.5,13.7101515 C15.7761424,13.7101515 16,13.4862939 16,13.2101515 L16,13.2101515 L16,11.2132314 C16,10.9370891 15.7761424,10.7132314 15.5,10.7132314 Z" id="Combined-Shape" fill="currentColor"></path></g></g></g></svg><span class="sublink-item__text col-9 d-flex justify-content-start pl-0 ">FON</span>
 							</li>
 						</ul>
-						<div class="header-user">
+						<div class="header-user pr-3">
 							<a href="#" class="header-user__link">
 								<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg" style="width: 40px; height: 40px;"><defs><path d="M16,0 L16,0 C24.836556,-1.623249e-15 32,7.163444 32,16 L32,16 C32,24.836556 24.836556,32 16,32 L16,32 C7.163444,32 1.082166e-15,24.836556 0,16 L0,16 C-1.082166e-15,7.163444 7.163444,1.623249e-15 16,0 Z" id="path-1"></path></defs><g id="Files" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="headers" transform="translate(-333.000000, -734.000000)"><g id="Group-40" transform="translate(333.000000, 734.000000)"><g id="Group-27"><g id="Shape"><g id="Group-28"><mask id="mask-2" fill="white"><use xlink:href="#path-1"></use></mask><path stroke="#FFFFFF" stroke-width="1.2" d="M16,0.6 C7.49481485,0.6 0.6,7.49481485 0.6,16 C0.6,24.5051851 7.49481485,31.4 16,31.4 C24.5051851,31.4 31.4,24.5051851 31.4,16 C31.4,7.49481485 24.5051851,0.6 16,0.6 Z"></path></g></g></g><path d="M16.5890279,10.4630964 C15.9219522,10.521217 15.3500203,10.5306842 14.7963151,10.5036857 L14.8357968,10.5668563 L14.1372164,10.9860045 C13.4220518,11.4151033 13.0361589,12.838915 13.4529132,13.7860838 L13.9747059,14.9719763 L13.0135227,14.9239171 C13.0210188,14.9832786 13.0328129,15.0498913 13.049588,15.1208044 C13.1026514,15.345118 13.1948303,15.5716839 13.2923479,15.7256303 C13.2957916,15.7310666 13.2991731,15.7363025 13.3024807,15.7413325 L13.7913222,15.7413325 L13.8838914,16.4356015 C13.9624914,17.0251017 14.2343485,17.5583597 14.6615532,17.9855644 L14.8958678,18.219879 L14.8958678,19.973921 L14.2222602,20.0816982 C12.9712335,20.2818625 11.8748029,20.6760848 11.075496,21.2081561 C11.0352604,21.2374183 10.9088721,21.465955 10.7761786,21.8745099 C10.7619561,21.9183001 10.7515403,21.9632363 10.7450473,22.008818 C10.6827371,22.4462433 10.9868237,22.8513481 11.4242602,22.913646 C12.9498362,23.1309606 14.4749905,23.2395878 16,23.2395878 C17.5250173,23.2395878 19.0501795,23.1309594 20.5757634,22.9136426 C20.621346,22.9071495 20.6662831,22.8967334 20.710074,22.8825104 C21.1303048,22.7460227 21.3603166,22.2947213 21.2238137,21.874486 C21.0911228,21.4659452 20.9647378,21.2374171 20.9512812,21.2268075 C20.1251971,20.6760848 19.0287665,20.2818625 17.7777398,20.0816982 L17.1041322,19.973921 L17.1041322,18.219879 L17.3384468,17.9855644 C17.7656515,17.5583597 18.0375086,17.0251017 18.1161086,16.4356015 L18.2167403,15.6808637 L18.7176601,15.722607 C18.8083041,15.5701435 18.8929698,15.3503501 18.9411714,15.1322952 C18.9568001,15.0615943 18.9675801,14.9951765 18.9742492,14.9359134 L17.9599708,15.0325113 L18.4911303,13.7931392 C18.9190671,12.79462 18.7052431,11.6467228 18.1929344,11.6284261 L17.5314394,11.6048013 L17.4307902,10.9505816 C17.3937906,10.7100839 16.9976506,10.4391689 16.5890279,10.4630964 Z M13.6277313,10.4027372 C13.6232038,10.4023643 13.6193592,10.4020703 13.6162707,10.4018633 C13.6230026,10.4023144 13.6295817,10.4027038 13.6360545,10.4029832 Z M18.6453806,15.8272842 C18.6450101,15.8275839 18.6446411,15.827884 18.6442737,15.8281843 C18.6450016,15.8275894 18.646698,15.8257638 18.6492277,15.8227622 Z" id="Shape" stroke="#FFFFFF" stroke-width="1.6" fill="#FFFFFF"></path></g></g></g></svg>
 							</a>
+							<div class="header-user__registration d-flex justify-content-center flex-column flex-wrap bg-gray">
+								<div class="header-user__form--top col-12">
+									<div class="container">
+										<div class="row  pl-3 pr-3 m-0">
+											<span class="user-form__top d-flex align-items-center p-2">Регистрация</span>
+											<span class="user-form__top d-flex align-items-center p-2">Войти</span>
+										</div>
+									</div>
+										
+									</div>
+								<form action="">
+									
+									<div class="main-form">
+										<div class="container">
+											<div class="row p-3 m-0">
+												<div class="email col-12">
+													<p class="email-text m-0">Введите ваш email <i class="fas fa-info-circle fa-circle__email"></i></p>
+													<input type="email" placeholder="Введите ваш email" class="col-12 rounded bg-transparent p-2 mb-3">
+												</div>
+												<div class="password col-12">
+													<p class="password-text m-0">Пароль </p>
+													<input type="password" placeholder="Пароль"   class="password-input col-12 rounded bg-transparent p-2 mb-3">
+													<!-- <i class="far fa-eye"></i> -->
+
+												</div>
+												<div class="name col-12">
+													<p class="name-text m-0">Имя <i class="fas fa-info-circle fa-circle__name"></i></p>
+													<input type="name" placeholder="Введите ваше имя" class="col-12 rounded bg-transparent p-2 mb-3">
+												</div>
+												
+												<div class="wrap-form__label col-12 pl-0 pr-0 pt-2">
+													<label class="col-12 ">
+														<input type="checkbox" class="agree-checkbox ">
+														<span class="input-checkbox__icon pl-3"></span>
+														<span class="checkbox-text pl-4">Я ознакомлен и принимаю 
+															<p class="pl-4"><a href="" class="input-checkbox__link">условия использования</a></p></span>
+													</label>
+
+
+													<label class="form-line col-12 pb-4" >
+														<input type="checkbox " class="agree-checkbox">
+														<span class="input-checkbox__icon pl-3"></span>
+														<span class="checkbox-text pl-4">Я согласен с
+															<p class="pl-4"><a href="" class="input-checkbox__link">Уведомлением о конфедициальности</a></p>
+														</span>
+													</label>
+												</div>
+												
+												<div class="about-coockies col-12 d-flex justify-content-center p-2">
+												<p class="about-coockies__text">Наш сайт использует coockies <a href="#" class="about-coockies__link">Подробнее</a> </p>
+												</div>
+
+												<div class="form-btn col-12 d-flex justify-content-center p-0">
+													<button type="submit " class="form-btn__registration col-12 bg-primary p-2">Регистрация</button>
+												</div>
+												<div class="wrap-fieldset col-12 mt-4 ">
+													<fieldset class="fieldset col-12 d-flex justify-content-center text-center ">
+														<legend class="legend-fieldset col-10 d-flex justify-content-center align-items-center text-center " >Или зарегестрируйся с помощью</legend>
+														
+													</fieldset>
+												</div>
+												<div class="form-bottom col-12 d-flex justify-content-center align-items-center">
+													<div class="form-facebook m-3 "><i class="fab fa-facebook-square p-3"></i></div>
+													<div class="form-google m-3 "><i class="fab fa-google p-3 "></i></div>
+												</div>
+											</div>
+										</div>
+										
+											
+										
+									</div>
+								</form>
+							</div>
 						</div>
 
-						<div class="header-user__signIn">
+						<div class="header-user__signIn pr-3">
 							<a href="#" class="header-user__signIn--link">ВОЙТИ</a>
 						</div>
 					</div>
 
-					
-				</div>
+					</div>
+					</div>
 				</div>
 			</div>
 	</header>
@@ -136,7 +215,13 @@
 		let getShadow = document.getElementById('overflow');
 		let subBtn = document.getElementById('button-closeNavbar'); 
 		let headLink = document.getElementById('header-link'); 
-		
+		// let headMenuLanguage = document.getElementsByClassName('menuLanguage');
+		// let linkLanguageActive = document.getElementById('link-langugeActive');
+		let headMenuLanguage = document.getElementById('menuLanguage');
+
+			
+
+
 		headLink.onclick = function(e) {
 			
 			let headSublink = document.getElementById('headerSublink');
@@ -150,7 +235,7 @@
 			else {
 				headSublink.classList.add('header-sublink');
 				headSublinkActive[0].style = 'display: none';
-			};
+			}
 		 console.log(headSublink)
 		};
 
@@ -164,7 +249,6 @@
 			 	}
 
 			};
-
 		
 
 		 	 subBtn.onclick = function(e) {
@@ -180,6 +264,22 @@
 				getShadow.style = 'display: none';
 		}
 
+		headMenuLanguage.onclick = function(e) {
+
+			let linkLanguageActive = document.getElementById('link-langugeActive');
+			
+				if (linkLanguageActive.classList.contains('link-language__subMenu')) {
+
+					linkLanguageActive.classList.remove('link-language__subMenu')
+					linkLanguageActive.classList.add('link-language__subMenu--active')
+				}
+					
+				
+			else {
+					linkLanguageActive.classList.remove('link-language__subMenu--active')
+					linkLanguageActive.classList.add('link-language__subMenu')
+			}
+		}
 
 	</script>
 
